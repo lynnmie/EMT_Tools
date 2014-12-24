@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="OSpace" type="__OSpace"/>
+	<xs:complexType name="__OSpace">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Car" type="Car"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Person" type="Person"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Car">
+		<xs:all>
+			<xs:element maxOccurs="1" minOccurs="0" name="id" type="xs:int"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="driver" type="xs:IDREF"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="clients">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="4" minOccurs="0" name="__item" type="xs:IDREF"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="_id" type="xs:ID"/>
+	</xs:complexType>
+
+	<xs:complexType name="Person">
+		<xs:all>
+			<xs:element maxOccurs="1" minOccurs="0" name="name" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="age" type="xs:int"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="sex" type="SEX"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="friends">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="__item" type="xs:IDREF"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="_id" type="xs:ID"/>
+	</xs:complexType>
+
+	<xs:simpleType name="SEX">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MAN"/>
+			<xs:enumeration value="WOMAN"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

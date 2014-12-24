@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root><Person _id="_16749745"><name>QA-AA3</name><age>48</age><tall>170.0</tall><friends /></Person><Person _id="_22949069"><name>John Horse</name><age>20</age><tall>180.0</tall><father>_15595312</father><mother>_16749745</mother><friends><__item>_15595312</__item><__item>_16749745</__item></friends></Person><Person _id="_15595312"><name>John Steve</name><age>50</age><tall>170.0</tall><friends /></Person></root>

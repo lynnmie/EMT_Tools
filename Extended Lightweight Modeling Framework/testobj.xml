@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<LLR _id="l1">
+		<rid>l1</rid>
+		<hlrs>
+			<__item>h1</__item>
+			<__item>h2</__item>
+		</hlrs>
+	</LLR>
+	<LLR _id="l2">
+		<rid>l2</rid>
+		<hlrs>
+			<__item>h2</__item>
+		</hlrs>
+	</LLR>
+	<LLR _id="l3">
+		<rid>l3</rid>
+		<hlrs>
+			<__item>h4</__item>
+			<__item>h1</__item>
+		</hlrs>
+	</LLR>
+	<LLR _id="l4">
+		<rid>l4</rid>
+		<hlrs>
+			<__item>h4</__item>
+			<__item>h3</__item>
+		</hlrs>
+	</LLR>
+	<LLR _id="l5">
+		<rid>l5</rid>
+		<hlrs>
+			<__item>h2</__item>
+		</hlrs>
+	</LLR>
+	<HLR _id="h1">
+		<rid>h1</rid>
+		<type>Functional</type>
+		<llrs>
+			<__item>l1</__item>
+			<__item>l2</__item>
+		</llrs>
+	</HLR>
+	<HLR _id="h2">
+		<rid>h2</rid>
+		<type>Functional</type>
+		<llrs>
+			<__item>l2</__item>
+			<__item>l3</__item>
+		</llrs>
+	</HLR>
+	<HLR _id="h3">
+		<rid>h3</rid>
+		<type>Safety</type>
+		<llrs>
+			<__item>l4</__item>
+		</llrs>
+	</HLR>
+	<HLR _id="h4">
+		<rid>h4</rid>
+		<type>Reliability</type>
+		<llrs>
+			<__item>l3</__item>
+			<__item>l1</__item>
+		</llrs>
+	</HLR>
+</root>

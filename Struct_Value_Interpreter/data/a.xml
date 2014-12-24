@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructGroup>
+	<Expression>
+		<Conjunction>
+			<Expression>
+				<AtLeast lower="2">
+					<Variable name="A" type="domain">
+						<iterator name="A_iter" type="free" _id="1" />
+					</Variable>
+					<Function type="logic">
+						<Template name="error">
+							<Variable name="x" ref="1" />
+						</Template>
+					</Function>
+				</AtLeast>
+			</Expression>
+			<Expression>
+				<AtLeast lower="2">
+					<Variable name="B" type="domain">
+						<iterator name="B_iter" type="free" _id="2" />
+					</Variable>
+					<Function type="logic">
+						<Template name="error">
+							<Variable name="x" ref="2" />
+						</Template>
+					</Function>
+				</AtLeast>
+			</Expression>
+		</Conjunction>
+	</Expression>
+</StructGroup>

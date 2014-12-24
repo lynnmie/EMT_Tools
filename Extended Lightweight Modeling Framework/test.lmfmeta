@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lmfmeta:ExtensionPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lmfmeta="http://sei.buaa.edu.cn/lmf/1.3.0/" javaPackage="test" javaClassPrefix="Test">
+  <extensions id="test_id">
+    <classifiers xsi:type="lmfmeta:Type" name="Person">
+      <attributes xsi:type="lmfmeta:PrimitiveAttribute" name="name" valueType="STRING"/>
+      <attributes xsi:type="lmfmeta:PrimitiveAttribute" name="age" valueType="INTEGER"/>
+      <attributes xsi:type="lmfmeta:EnumAttribute" name="sex" valueType="//@extensions.0/@classifiers.1"/>
+    </classifiers>
+    <classifiers xsi:type="lmfmeta:Enum" name="SEX">
+      <literals name="MAN"/>
+      <literals name="WOMAN"/>
+    </classifiers>
+    <classifiers xsi:type="lmfmeta:Type" name="Car">
+      <attributes xsi:type="lmfmeta:ObjectAttribute" name="driver" valueType="//@extensions.0/@classifiers.0"/>
+      <attributes xsi:type="lmfmeta:PrimitiveAttribute" name="id" valueType="INTEGER"/>
+      <attributes xsi:type="lmfmeta:ListAttribute" name="clients" valueType="//@extensions.0/@classifiers.0"/>
+    </classifiers>
+  </extensions>
+  <extensions id="new_id">
+    <classifiers xsi:type="lmfmeta:Type" superTypes="//@extensions.0/@classifiers.0" name="Student">
+      <attributes xsi:type="lmfmeta:PrimitiveAttribute" name="sid" valueType="INTEGER"/>
+    </classifiers>
+    <classifiers xsi:type="lmfmeta:Type" name="School">
+      <attributes xsi:type="lmfmeta:ListAttribute" name="students" valueType="//@extensions.1/@classifiers.0"/>
+    </classifiers>
+  </extensions>
+</lmfmeta:ExtensionPackage>

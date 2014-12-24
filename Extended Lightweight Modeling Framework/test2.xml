@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Person _id="4">
+		<name>Losei Steve</name>
+		<sex>MAN</sex>
+		<age>50</age>
+		<tall>179.00</tall>
+		<friends>
+			<__item>3</__item>
+			<__item>2</__item>
+		</friends>
+	</Person>
+</root>
